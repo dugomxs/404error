@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* { 
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background-color: hsla(126, 100%, 48%, 0.17);
+  --background-button: hsla(137, 69%, 45%, 0.85);
+  --background-button-hover: hsl(137, 71%, 52%);
+
+  --headline:hsla(0, 0%, 0%, 1);
+  --paragraph:hsla(170, 22%, 23%, 1);
+  --button-text: hsla(0, 0%, 0%, 0.88);
+
+  
+}
+
+
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.container {
+  margin-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  width: 1240px;
+  height: 600px;
+  background: var(--background-color);
+}
+
+.texts {
+  box-sizing: border-box;
+  margin-left: 40px;
+}
+
+h1 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  color: var(--headline);
+  
+}
+
+h2 {
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  color: var(--headline);
+}
+
+p{
+  color: var(--paragraph);
+  font-size: 15px;
+  margin-top: 34px;
+  text-align: justify;
+  width: 400px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+}
+
+.back {
+  margin-top: 80px;
+  font-size: 15px;
+  height: 3rem;
+  width: 12rem;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: 600;
+  color: var(--button-text);
+  background: var(--background-button);
+  font-size: 18px;
+  cursor: pointer;
+  border: none;
+}
+
+.back:hover {
+  background-color: var(--background-button-hover);
+  color: white;
+  transition: .3s;
+}
+
+#plug { 
+ margin-right: 20px;
+ width: 750px;
+}
+
+#error404 {
+  height: 550px;
+  margin-right: 25px;
+}
